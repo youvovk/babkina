@@ -64,7 +64,7 @@ function App() {
       </div>
 
       <form className={classes.root} noValidate autoComplete="off">
-        <TextField value={value} id="standard-basic" label="Починай писати тут" onChange={event => {
+        <TextField value={value} id="standard-basic" label="Напиши мене повністю!" onChange={event => {
           setText(event.target.value.replace(/\s\s+/g, ' ').replace(/^\s/g, '').replace(/\s+$/g, ''))
           setValue(event.target.value);
         }} />
